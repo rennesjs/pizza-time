@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>RennesJS Pizzas</title>
+        <meta charset="UTF-8" />
+        <meta name="twitter:title" content="RennesJS pizzas" />
+        <meta name="twitter:description" content="..." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <h1>RennesJS pizza picker</h1>
+        <fieldset>
+            <h2>Pizzas from</h2>
+            <select id="pizza-source">
+                <option value="amour">Amour de pizza</option>
+                <option value="dominos">Domino's pizza</option>
+            </select>
+        </fieldset>
+        <label>
+            <h2>Attendies</h2>
+            <span>
+                <input
+                    id="amount-range"
+                    type="range"
+                    max="100"
+                    min="20"
+                    value="60"
+                />
+                <input
+                    id="amount"
+                    type="number"
+                    max="100"
+                    min="20"
+                    value="60"
+                />
+            </span>
+        </label>
+        <span id="result">
+            <span>
+                <output id="pizza-amount">0</output>
+                <span id="pizza-label">pizzas :</span>
+            </span>
+            <ul id="pizza-list"></ul>
+        </span>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
